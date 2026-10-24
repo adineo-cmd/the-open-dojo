@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search the library — The Open Dojo</title>
+  <meta name="description" content="Search The Open Dojo: styles, kata, techniques, terminology, and fitness topics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23B23A2E'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='serif'%3E%E9%81%93%3C/text%3E%3C/svg%3E">
+</head>
+<body class="search-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">道</span>
+        <span class="brand-text">The Open Dojo
+          <small>A free martial arts library</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <a href="styles.html">Styles</a>
+            <ul class="submenu">
+              <li class="subhead">By region</li>
+              <li><a href="styles.html#japan">Japan &amp; Okinawa</a></li>
+              <li><a href="styles.html#korea">Korea</a></li>
+              <li><a href="styles.html#china">China</a></li>
+              <li><a href="styles.html#world">Around the world</a></li>
+              <li><a href="styles.html#ancient">Ancient &amp; folk</a></li>
+              <li><a href="styles.html#south-asia">South &amp; SE Asia</a></li>
+              <li><a href="styles.html#hybrid">Modern hybrids</a></li>
+              <li class="subhead">Start here</li>
+              <li><a href="styles.html#featured">Featured styles</a></li>
+              <li><a href="styles.html#choosing">Choosing a school</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="kata.html">Kata &amp; Forms</a>
+            <ul class="submenu">
+              <li><a href="kata.html#shotokan">Shotokan Karate</a></li>
+              <li><a href="kata.html#taekwondo">Taekwondo Forms</a></li>
+              <li><a href="kata.html#goju-ryu">Goju-Ryu</a></li>
+              <li><a href="kata.html#shito-ryu">Shito-Ryu</a></li>
+              <li><a href="kata.html#other-styles">Wado · Shorin · Isshin · Kyokushin</a></li>
+              <li><a href="kata.html#tang-soo-do">Tang Soo Do</a></li>
+              <li><a href="kata.html#judo-kata">Judo Kata</a></li>
+              <li><a href="kata.html#practicing">How to practice</a></li>
+            </ul>
+          </li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li class="has-sub">
+            <a href="ranks.html">More</a>
+            <ul class="submenu">
+              <li class="subhead">Study</li>
+              <li><a href="profiles.html">Style profiles</a></li>
+              <li><a href="ranks.html">Belts &amp; ranking</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+              <li><a href="weapons.html">Weapons arts</a></li>
+              <li><a href="history.html">History &amp; philosophy</a></li>
+              <li class="subhead">Practice</li>
+              <li><a href="sparring.html">Sparring &amp; competition</a></li>
+              <li><a href="self-defense.html">Self-defense</a></li>
+              <li><a href="syllabi.html">Training syllabi</a></li>
+              <li><a href="search.html">Search</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="searchbox" action="search.html" role="search">
+          <input type="search" name="q" placeholder="Search the library…" aria-label="Search the library">
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Library</a> / Search</p>
+        <h1>Search the library</h1>
+        <form class="searchbox-big" action="search.html" role="search" id="big-search">
+          <input type="search" name="q" id="search-input" placeholder="Styles, kata, techniques, terms…" aria-label="Search the library">
+          <button type="submit">Search</button>
+        </form>
+        <p class="result-count" id="result-count" role="status"></p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container" id="results"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-seal" aria-hidden="true">道</span>
+          <strong>The Open Dojo</strong>
+        </div>
+        <p>A free, community-minded reference for martial artists of every art and level — styles, kata, techniques, terminology, and fitness, written to be read between classes.</p>
+      </div>
+      <div>
+        <h4>Library</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="profiles.html">Style profiles</a></li>
+          <li><a href="kata.html">Kata &amp; Forms</a></li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contributing</h4>
+        <ul>
+          <li><a href="mailto:editors@opendojo.example">Send a correction</a></li>
+          <li><a href="mailto:editors@opendojo.example">Suggest an entry</a></li>
+        </ul>
+        <p class="small">The index grows the way the library does — one entry at a time.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="container">
+        <span>© 2026 The Open Dojo. Original reference content, written for students of the fighting arts.</span>
+        <span>Informational only — practice techniques under qualified supervision.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/search-data.js"></script>
+  <script>
+    (function () {
+      var DATA = window.LIBRARY_INDEX || [];
+      var resultsEl = document.getElementById('results');
+      var countEl = document.getElementById('result-count');
+      var input = document.getElementById('search-input');
+
+      function escapeHtml(s) {
+        return s.replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+
+      function highlight(text, q) {
+        var escaped = escapeHtml(text);
+        if (!q) return escaped;
+        var re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        return escaped.replace(re, '<mark>$1</mark>');
+      }
+
+      function score(entry, q) {
+        var t = entry.t.toLowerCase();
+        var d = (entry.d + ' ' + (entry.k || '')).toLowerCase();
+        if (t === q) return 100;
+        if (t.indexOf(q) === 0) return 80;
+        if (t.indexOf(q) !== -1) return 60;
+        if (d.indexOf(q) !== -1) return 30;
+        return -1;
+      }
+
+      function render(q) {
+        resultsEl.innerHTML = '';
+        var terms = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+
+        if (!terms.length) {
+          countEl.textContent = 'Everything in the library, grouped by section:';
+          var sections = {};
+          DATA.forEach(function (e) { (sections[e.s] = sections[e.s] || []).push(e); });
+          Object.keys(sections).forEach(function (s) {
+            var group = document.createElement('div');
+            group.className = 'result-group';
+            var h = document.createElement('h2');
+            h.textContent = s;
+            group.appendChild(h);
+            sections[s].forEach(function (e) {
+              group.insertAdjacentHTML('beforeend',
+                '<a class="result" href="' + e.u + '"><div class="r-title">' + escapeHtml(e.t) +
+                '</div><div class="r-desc">' + escapeHtml(e.d) + '</div></a>');
+            });
+            resultsEl.appendChild(group);
+          });
+          return;
+        }
+
+        var hits = DATA.map(function (e) {
+          var best = -1;
+          terms.forEach(function (term) { best = Math.max(best, score(e, term)); });
+          return { e: e, s: best };
+        }).filter(function (x) { return x.s >= 0; })
+          .sort(function (a, b) { return b.s - a.s; });
+
+        if (!hits.length) {
+          countEl.textContent = '';
+          resultsEl.innerHTML = '<p class="no-results">Nothing in the library matches “' + escapeHtml(q) +
+            '” yet. Try a broader word — “kick”, “kata”, “judo” — or browse the <a href="index.html">front page</a>.</p>';
+          return;
+        }
+
+        countEl.textContent = hits.length + (hits.length === 1 ? ' entry' : ' entries') + ' found for “' + q.trim() + '”';
+        var qForMark = terms.join('|');
+        var groups = {};
+        hits.forEach(function (x) { (groups[x.e.s] = groups[x.e.s] || []).push(x.e); });
+        Object.keys(groups).forEach(function (s) {
+          var group = document.createElement('div');
+          group.className = 'result-group';
+          var h = document.createElement('h2');
+          h.textContent = s;
+          group.appendChild(h);
+          groups[s].forEach(function (e) {
+            group.insertAdjacentHTML('beforeend',
+              '<a class="result" href="' + e.u + '"><div class="r-title">' + highlight(e.t, qForMark) +
+              '</div><div class="r-desc">' + highlight(e.d, qForMark) + '</div></a>');
+          });
+          resultsEl.appendChild(group);
+        });
+      }
+
+      document.getElementById('big-search').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var q = input.value;
+        history.replaceState(null, '', q ? '?q=' + encodeURIComponent(q) : location.pathname);
+        render(q);
+      });
+
+      var initial = new URLSearchParams(location.search).get('q') || '';
+      input.value = initial;
+      render(initial);
+      if (initial) input.focus();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martial Arts Styles — The Open Dojo</title>
+  <meta name="description" content="A catalog of martial arts styles from around the world: their origins, their focus, and what to expect in a class.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23B23A2E'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='serif'%3E%E9%81%93%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">道</span>
+        <span class="brand-text">The Open Dojo
+          <small>A free martial arts library</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <a href="styles.html" class="current" aria-current="page">Styles</a>
+            <ul class="submenu">
+              <li class="subhead">By region</li>
+              <li><a href="styles.html#japan">Japan &amp; Okinawa</a></li>
+              <li><a href="styles.html#korea">Korea</a></li>
+              <li><a href="styles.html#china">China</a></li>
+              <li><a href="styles.html#world">Around the world</a></li>
+              <li><a href="styles.html#ancient">Ancient &amp; folk</a></li>
+              <li><a href="styles.html#south-asia">South &amp; SE Asia</a></li>
+              <li><a href="styles.html#hybrid">Modern hybrids</a></li>
+              <li class="subhead">Start here</li>
+              <li><a href="styles.html#featured">Featured styles</a></li>
+              <li><a href="styles.html#choosing">Choosing a school</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="kata.html">Kata &amp; Forms</a>
+            <ul class="submenu">
+              <li><a href="kata.html#shotokan">Shotokan Karate</a></li>
+              <li><a href="kata.html#taekwondo">Taekwondo Forms</a></li>
+              <li><a href="kata.html#goju-ryu">Goju-Ryu</a></li>
+              <li><a href="kata.html#shito-ryu">Shito-Ryu</a></li>
+              <li><a href="kata.html#other-styles">Wado · Shorin · Isshin · Kyokushin</a></li>
+              <li><a href="kata.html#tang-soo-do">Tang Soo Do</a></li>
+              <li><a href="kata.html#judo-kata">Judo Kata</a></li>
+              <li><a href="kata.html#practicing">How to practice</a></li>
+            </ul>
+          </li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li class="has-sub">
+            <a href="ranks.html">More</a>
+            <ul class="submenu">
+              <li class="subhead">Study</li>
+              <li><a href="profiles.html">Style profiles</a></li>
+              <li><a href="ranks.html">Belts &amp; ranking</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+              <li><a href="weapons.html">Weapons arts</a></li>
+              <li><a href="history.html">History &amp; philosophy</a></li>
+              <li class="subhead">Practice</li>
+              <li><a href="sparring.html">Sparring &amp; competition</a></li>
+              <li><a href="self-defense.html">Self-defense</a></li>
+              <li><a href="syllabi.html">Training syllabi</a></li>
+              <li><a href="search.html">Search</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="searchbox" action="search.html" role="search">
+          <input type="search" name="q" placeholder="Search the library…" aria-label="Search the library">
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Library</a> / Styles</p>
+        <h1>Martial arts styles</h1>
+        <p class="lede">Every art in this catalog answers the same question differently: what do you do when someone wants to fight you? Below, the featured profiles give you a feel for each answer, and the master list goes broad — nearly 140 arts and traditions across seven regions, by method, and by what to expect in a class.</p>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <h2>Featured styles</h2>
+        <p class="section-intro">Ten arts that anchor most of the world's training halls. Each card shows the style's own writing — every tradition names itself first.</p>
+
+        <div class="filter-bar" role="group" aria-label="Filter featured styles by region">
+          <button type="button" data-region="all" aria-pressed="true">All regions</button>
+          <button type="button" data-region="japan" aria-pressed="false">Japan &amp; Okinawa</button>
+          <button type="button" data-region="korea" aria-pressed="false">Korea</button>
+          <button type="button" data-region="china" aria-pressed="false">China</button>
+          <button type="button" data-region="world" aria-pressed="false">Around the world</button>
+        </div>
+
+        <div class="style-grid" id="style-cards">
+          <article class="style-card" data-region="japan" id="karate">
+            <div class="script" lang="ja" aria-hidden="true">空手道</div>
+            <div class="origin">Okinawa, refined in mainland Japan</div>
+            <h3>Karate</h3>
+            <p>“Empty hand” — an Okinawan blend of indigenous fighting methods and Chinese influence that mainland Japan organized into modern schools (ryū). Training rests on three legs: kihon (basics), kata (forms), and kumite (sparring). Expect deep stances, direct linear strikes, and a culture of exact repetition.</p>
+            <div class="chips">
+              <span class="chip chip-striking">Striking</span>
+              <span class="chip">Kata</span>
+              <span class="chip">Major styles: Shotokan · Goju-Ryu · Shito-Ryu · Wado-Ryu · Kyokushin</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="korea" id="taekwondo">
+            <div class="script" lang="ko" aria-hidden="true">跆拳道</div>
+            <div class="origin">Korea · 1940s–50s</div>
+            <h3>Taekwondo</h3>
+            <p>Korea's most exported art, formally consolidated after independence and shaped by karate lineage plus older Korean kicking traditions. The name means “the way of the foot and fist,” and the feet do most of the talking: fast linear kicks, spinning kicks, and jumping techniques. Two main governing families — Kukkiwon/WT (Olympic) and ITF — differ in forms and sparring rules.</p>
+            <div class="chips">
+              <span class="chip chip-striking">Striking</span>
+              <span class="chip">Kicks</span>
+              <span class="chip">Olympic sport</span>
+              <span class="chip">Poomsae / patterns</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="japan" id="judo">
+            <div class="script" lang="ja" aria-hidden="true">柔道</div>
+            <div class="origin">Japan · founded 1882</div>
+            <h3>Judo</h3>
+            <p>Jigoro Kano distilled older jujutsu schools into a method he called “the gentle way” — winning by yielding, using balance and timing rather than force. Throws and sweeps score highest; ground work covers pins, armlocks, and chokes. Judo became the first martial art in the Olympics and the root system for much of modern grappling.</p>
+            <div class="chips">
+              <span class="chip chip-grappling">Grappling</span>
+              <span class="chip">Throws</span>
+              <span class="chip">Pins &amp; submissions</span>
+              <span class="chip">Olympic sport</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="world" id="bjj">
+            <div class="script" lang="pt" aria-hidden="true">Jiu-Jitsu Brasileiro</div>
+            <div class="origin">Brazil · early 1900s</div>
+            <h3>Brazilian Jiu-Jitsu</h3>
+            <p>Built on judo ground work that the Gracie family adapted and refined, BJJ holds that a smaller person can control and submit a larger one through position: guard, mount, back control. Chokes and joint locks end fights on the mat. Its belt ladder — white through black, with stripes — has become the cultural template for grappling gyms everywhere.</p>
+            <div class="chips">
+              <span class="chip chip-grappling">Grappling</span>
+              <span class="chip">Ground fighting</span>
+              <span class="chip">Submissions</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="world" id="muay-thai">
+            <div class="script" lang="th" aria-hidden="true">มวยไทย</div>
+            <div class="origin">Thailand</div>
+            <h3>Muay Thai</h3>
+            <p>Thailand's national sport grew out of centuries of battlefield arts into ring fighting called “the art of eight limbs”: two fists, two elbows, two knees, two shins. Its clinch work — controlling the head and neck while striking with knees — is unmatched, and its roundhouse kick delivered with the shin is a benchmark of power.</p>
+            <div class="chips">
+              <span class="chip chip-striking">Striking</span>
+              <span class="chip">Clinch</span>
+              <span class="chip">Eight limbs</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="china" id="wing-chun">
+            <div class="script" lang="zh" aria-hidden="true">詠春</div>
+            <div class="origin">China · Guangdong (Canton)</div>
+            <h3>Wing Chun</h3>
+            <p>A compact Southern Chinese system built for close range: the centerline theory, straight punches, low kicks, and sticky-hands (chi sau) sensitivity that trains reaction by touch. Familiar worldwide through Ip Man and his most famous student, Bruce Lee, who later folded its ideas into Jeet Kune Do.</p>
+            <div class="chips">
+              <span class="chip chip-striking">Striking</span>
+              <span class="chip">Close range</span>
+              <span class="chip">Chi sau</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="japan" id="aikido">
+            <div class="script" lang="ja" aria-hidden="true">合気道</div>
+            <div class="origin">Japan · early 1900s</div>
+            <h3>Aikido</h3>
+            <p>Morihei Ueshiba's art aims to resolve conflict without destroying the attacker: joint locks, pinning throws, and blending movement that redirects an attack instead of blocking it. Weapons forms (staff and wooden sword) shape much of its movement. Grading emphasizes flowing technique and ukemi — receiving technique safely.</p>
+            <div class="chips">
+              <span class="chip chip-hybrid">Joint locks</span>
+              <span class="chip">Throws</span>
+              <span class="chip">Non-competitive</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="world" id="krav-maga">
+            <div class="script" lang="he" aria-hidden="true">קרב מגע</div>
+            <div class="origin">Israel · 1940s onward</div>
+            <h3>Krav Maga</h3>
+            <p>“Contact combat,” developed by Imi Lichtenfeld and taught first to Israel's armed forces, then to civilians. It borrows whatever works — boxing punches, judo throws, BJJ ground defense — and strips it to what survives stress: aggressive simultaneous defense and attack, targeting, and escaping. Civilian training centers on self-defense scenarios rather than sport.</p>
+            <div class="chips">
+              <span class="chip chip-hybrid">Self-defense</span>
+              <span class="chip">Scenario training</span>
+              <span class="chip">No sport rules</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="korea" id="tang-soo-do">
+            <div class="script" lang="ko" aria-hidden="true">唐手道</div>
+            <div class="origin">Korea</div>
+            <h3>Tang Soo Do</h3>
+            <p>“The way of the China hand” — a Korean art with strong Shotokan ancestry that predates and parallels modern taekwondo. It keeps traditional forms, rigid discipline, and a balance of hand and foot techniques, and it was never fully absorbed into the Olympic sport family. Chuck Norris made it famous in the West.</p>
+            <div class="chips">
+              <span class="chip chip-striking">Striking</span>
+              <span class="chip">Traditional forms</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-region="world" id="capoeira">
+            <div class="script" lang="pt" aria-hidden="true">Capoeira</div>
+            <div class="origin">Brazil · by enslaved Africans</div>
+            <h3>Capoeira</h3>
+            <p>An Afro-Brazilian art disguised as dance — or dance disguised as fighting; history made it both. Practitioners play in a roda (circle) to berimbau music, weaving kicks, sweeps, acrobatics, and evasion into a conversation with a partner. Training builds balance, rhythm, and mobility few other arts match.</p>
+            <div class="chips">
+              <span class="chip chip-hybrid">Kicks &amp; acrobatics</span>
+              <span class="chip">Music &amp; rhythm</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="master-list">
+      <div class="container">
+        <h2>Master list, by region</h2>
+        <p class="section-intro">The wider catalog — over a hundred arts and traditions. Placement reflects where an art took shape; many arts since spread far past their homelands. Skip ahead: <a href="#japan">Japan &amp; Okinawa</a> · <a href="#korea">Korea</a> · <a href="#china">China</a> · <a href="#world">Around the world</a> · <a href="#ancient">Ancient &amp; folk</a> · <a href="#south-asia">South &amp; SE Asia</a> · <a href="#hybrid">Modern hybrids</a>.</p>
+
+        <div class="callout callout--plain" style="margin-bottom:28px">
+          <p><strong>How complete is this?</strong> Honestly: no catalog can hold every martial art. Thousands exist — every village's wrestling, every family's kung fu lineage, every army's close-combat manual. This library documents nearly 140 named arts plus the techniques, syllabi, and terminology you'll actually meet in training halls. If your art is missing, that's an invitation: <a href="mailto:editors@opendojo.example">write it in</a> and help the map grow.</p>
+        </div>
+
+        <div class="master-list">
+          <h3 id="japan">Japan &amp; Okinawa</h3>
+          <ul>
+            <li>Karate <span class="where">— Okinawa/Japan; striking</span></li>
+            <li>Shotokan <span class="where">— linear, powerful karate (Funakoshi)</span></li>
+            <li>Goju-Ryu <span class="where">— hard/soft karate from Naha</span></li>
+            <li>Shito-Ryu <span class="where">— encyclopedic kata syllabus (Mabuni)</span></li>
+            <li>Wado-Ryu <span class="where">— karate blended with jujutsu movement</span></li>
+            <li>Kyokushin <span class="where">— full-contact knockdown karate (Oyama)</span></li>
+            <li>Shorin-Ryu <span class="where">— Okinawan light-and-fast karate</span></li>
+            <li>Uechi-Ryu <span class="where">— Okinawan karate with crane roots</span></li>
+            <li>Isshin-Ryu <span class="where">— Okinawan; vertical-fist punching</span></li>
+            <li>Chito-Ryu <span class="where">— Okinawan-founded, medical man's karate (Chitose)</span></li>
+            <li>Ryuei-Ryu <span class="where">— Okinawan line with Chinese roots</span></li>
+            <li>Shukokai <span class="where">— hip-powered, fast karate from the Shito line</span></li>
+            <li>Seido Juku <span class="where">— full-contact-derived school with meditative ethic</span></li>
+            <li>Judo <span class="where">— throws and groundwork (Kano, 1882)</span></li>
+            <li>Aikido <span class="where">— blending, locks, pins (Ueshiba)</span></li>
+            <li>Yoshinkan / Shodokan aikido <span class="where">— structured and competitive aikido lines</span></li>
+            <li>Daito-ryu aiki-jujutsu <span class="where">— classical school behind aikido's movement</span></li>
+            <li>Japanese jujutsu <span class="where">— samurai-era unarmed methods</span></li>
+            <li>Hakko-ryu <span class="where">— jujutsu of pressure points and gentle locks</span></li>
+            <li>Shorinji Kempo <span class="where">— strikes and locks in one system</span></li>
+            <li>Nippon Kempo <span class="where">— armored full-contact Japanese sport</span></li>
+            <li>Kendo <span class="where">— bamboo-sword fencing</span></li>
+            <li>Kenjutsu <span class="where">— classical sword arts</span></li>
+            <li>Iaido <span class="where">— the draw and cut</span></li>
+            <li>Jodo <span class="where">— the four-foot staff against the sword</span></li>
+            <li>Kyudo <span class="where">— Japanese archery</span></li>
+            <li>Naginatajutsu <span class="where">— the naginata halberd</span></li>
+            <li>Sojutsu <span class="where">— spear arts</span></li>
+            <li>Tessenjutsu <span class="where">— the iron war fan</span></li>
+            <li>Jigen-ryu <span class="where">— Satsuma sword school of the first strike</span></li>
+            <li>Ninjutsu traditions <span class="where">— historical and modern lineages</span></li>
+            <li>Yoseikan Budo <span class="where">— Mochizuki's blend of judo, aikido, karate</span></li>
+            <li>Shintaido <span class="where">— expressive, modern Japanese movement art</span></li>
+            <li>Sumo <span class="where">— Japan's national sport; pushing &amp; throwing</span></li>
+            <li>Okinawan kobudo <span class="where">— the island's staff &amp; tool weapons arts</span></li>
+            <li>Motobu-ryu <span class="where">— an Okinawan royal-family line of hand method</span></li>
+            <li>Tenshin Shoden Katori Shinto-ryu <span class="where">— among the oldest recorded sword schools (1447)</span></li>
+            <li>Yagyu Shinkage-ryu <span class="where">— sword school of the shoguns</span></li>
+            <li>Hozoin-ryu <span class="where">— the temple spear masters of Nara</span></li>
+            <li>Muso Jikiden Eishin-ryu <span class="where">— a great iaido lineage</span></li>
+            <li>Jutte-jutsu <span class="where">— the police truncheon art of old Edo</span></li>
+          </ul>
+
+          <h3 id="korea">Korea</h3>
+          <ul>
+            <li>Taekwondo <span class="where">— Korea's global art; WT &amp; ITF families</span></li>
+            <li>Tang Soo Do <span class="where">— traditional pre-sport Korean karate</span></li>
+            <li>Hapkido <span class="where">— locks, throws, kicks; Korean aikido cousin</span></li>
+            <li>Hankido <span class="where">— circular, flowing hapkido relative</span></li>
+            <li>Kuk Sool Won <span class="where">— systematic collection of Korean arts</span></li>
+            <li>Hwa Rang Do <span class="where">— comprehensive Korean art</span></li>
+            <li>Taekkyeon <span class="where">— old Korean art of flowing trips &amp; kicks</span></li>
+            <li>Soo Bahk Do <span class="where">— Moo Duk Kwan's traditional line</span></li>
+            <li>Ssireum <span class="where">— Korean belt-wrestling, its oldest sport</span></li>
+            <li>Subak <span class="where">— historical striking tradition of old Korea</span></li>
+            <li>Gwon Beop <span class="where">— hand methods recorded in the old military manuals</span></li>
+            <li>Kumdo <span class="where">— Korean kendo</span></li>
+          </ul>
+
+          <h3 id="china">China</h3>
+          <ul>
+            <li>Kung fu / wushu <span class="where">— umbrella terms for Chinese arts</span></li>
+            <li>Modern wushu <span class="where">— the performance sport of forms &amp; acrobatics</span></li>
+            <li>Shaolin quan <span class="where">— temple traditions of the north</span></li>
+            <li>Wing Chun <span class="where">— Southern close-range art</span></li>
+            <li>Tai chi (taijiquan) <span class="where">— internal art; Chen, Yang, Wu lines</span></li>
+            <li>Baguazhang <span class="where">— circle-walking internal art</span></li>
+            <li>Xingyiquan <span class="where">— direct, linear internal art</span></li>
+            <li>Yi Quan <span class="where">— standing-meditation internal art of intention</span></li>
+            <li>Liu He Ba Fa <span class="where">— “six harmonies, eight methods” internal blend</span></li>
+            <li>Sanda / sanshou <span class="where">— Chinese kickboxing</span></li>
+            <li>Choy Li Fut <span class="where">— Southern art, wide swinging power</span></li>
+            <li>Hung Gar <span class="where">— strong stances, tiger &amp; crane</span></li>
+            <li>Northern Praying Mantis <span class="where">— hooking hand methods</span></li>
+            <li>White Crane <span class="where">— a root of Okinawan karate</span></li>
+            <li>Zui Quan <span class="where">— drunken boxing: stagger as strategy</span></li>
+            <li>Fanzi <span class="where">— blistering flurries of turning fists</span></li>
+            <li>Chuojiao <span class="where">— “piercing feet,” the kicking specialist</span></li>
+            <li>Tongbei <span class="where">— whipping, whole-arm power from the back</span></li>
+            <li>Chin na <span class="where">— the seizing arts: locks &amp; controls across styles</span></li>
+            <li>Bajiquan <span class="where">— explosive elbow &amp; body strikes</span></li>
+            <li>Mizong quan <span class="where">— "lost track fist," Huo Yuanjia's art</span></li>
+            <li>Pigua zhang <span class="where">— chopping-palm long-arm power</span></li>
+            <li>Bak Mei <span class="where">— "white eyebrow," close and explosive</span></li>
+            <li>Wuzuquan <span class="where">— "five ancestors," a Southern synthesis</span></li>
+            <li>Fu Jow Pai <span class="where">— tiger claw striking and seizing</span></li>
+            <li>Shuai jiao <span class="where">— Chinese jacket wrestling</span></li>
+          </ul>
+
+          <h3 id="world">Around the world</h3>
+          <ul>
+            <li>Boxing <span class="where">— the sweet science; fists only</span></li>
+            <li>Bare-knuckle boxing <span class="where">— the prize ring's oldest form, revived</span></li>
+            <li>Wrestling <span class="where">— freestyle &amp; Greco-Roman; takedowns</span></li>
+            <li>Folkstyle wrestling <span class="where">— the American scholastic rule set</span></li>
+            <li>Fencing <span class="where">— Olympic foil, épée &amp; sabre</span></li>
+            <li>Kickboxing <span class="where">— karate + boxing's ring child</span></li>
+            <li>Muay Thai <span class="where">— Thailand's eight-limb art</span></li>
+            <li>Lethwei <span class="where">— Myanmar's bare-knuckle cousin</span></li>
+            <li>Muay Boran <span class="where">— Muay Thai's battlefield ancestor</span></li>
+            <li>Krabi-krabong <span class="where">— Thailand's sword &amp; staff art</span></li>
+            <li>Lerdrit <span class="where">— the Thai military's hand-to-hand system</span></li>
+            <li>Pradal Serey <span class="where">— Cambodia's eight-limb ring sport</span></li>
+            <li>Bokator <span class="where">— Cambodia's ancient battlefield art, in revival</span></li>
+            <li>Jogo do Pau <span class="where">— Portugal's staff-fencing tradition</span></li>
+            <li>Brazilian jiu-jitsu <span class="where">— ground grappling</span></li>
+            <li>Luta livre <span class="where">— Brazil's no-gi submission style</span></li>
+            <li>Capoeira <span class="where">— Afro-Brazilian game of kicks</span></li>
+            <li>Krav Maga <span class="where">— Israeli self-defense</span></li>
+            <li>Sambo <span class="where">— Soviet jacket wrestling + submissions</span></li>
+            <li>Systema <span class="where">— Russian breath, relaxation, movement</span></li>
+            <li>Savate <span class="where">— French kickboxing in boots</span></li>
+            <li>Canne de combat <span class="where">— French stick-fencing sport</span></li>
+            <li>HEMA <span class="where">— revived European sword &amp; wrestling arts</span></li>
+            <li>Bartitsu <span class="where">— Victorian mix of jujutsu, boxing, cane</span></li>
+            <li>Arnis / Kali / Eskrima <span class="where">— Filipino stick &amp; blade arts</span></li>
+            <li>Silat <span class="where">— Malay archipelago blade &amp; body flow</span></li>
+            <li>Jeet Kune Do <span class="where">— Bruce Lee's concept-based method</span></li>
+            <li>Mixed martial arts <span class="where">— the modern hybrid ring sport</span></li>
+          </ul>
+
+          <h3 id="south-asia">South &amp; Southeast Asia</h3>
+          <ul>
+            <li>Kalaripayattu <span class="where">— Kerala's ancient art of body &amp; blade</span></li>
+            <li>Silambam <span class="where">— Tamil staff tradition</span></li>
+            <li>Gatka <span class="where">— Sikh sword-and-stick method</span></li>
+            <li>Vovinam <span class="where">— Vietnamese art of hard &amp; soft, founded 1938</span></li>
+            <li>Qwan Ki Do <span class="where">— Vietnamese-French hybrid</span></li>
+            <li>Bando <span class="where">— Burmese art of animal styles</span></li>
+            <li>Banshay <span class="where">— Burmese weapons methods</span></li>
+            <li>Naban <span class="where">— Burmese grappling</span></li>
+            <li>Thaing <span class="where">— umbrella term for Burma's arts</span></li>
+          </ul>
+
+          <h3 id="ancient">Ancient &amp; folk traditions</h3>
+          <ul>
+            <li>Pankration <span class="where">— ancient Greece's boxing + wrestling, Olympic in 648 BC</span></li>
+            <li>Engolo <span class="where">— Angolan ritual fight; capoeira's ancestor</span></li>
+            <li>Tahtib <span class="where">— Egyptian stick fencing, danced for millennia</span></li>
+            <li>Dambe <span class="where">— Hausa boxing of West Africa</span></li>
+            <li>Laamb <span class="where">— Senegalese wrestling</span></li>
+            <li>Istunka <span class="where">— Somali stick-fighting festival</span></li>
+            <li>Glima <span class="where">— Iceland's Viking-age wrestling</span></li>
+            <li>Gouren <span class="where">— Breton jacket wrestling</span></li>
+            <li>Schwingen <span class="where">— Swiss wrestling on sawdust</span></li>
+            <li>Cornish wrestling <span class="where">— England's jacket-wrestling heritage</span></li>
+            <li>Collar-and-elbow <span class="where">— Ireland's historical wrestling style</span></li>
+            <li>Yağlı güreş <span class="where">— Turkish oil wrestling</span></li>
+            <li>Bökh <span class="where">— Mongolian wrestling of the Naadam</span></li>
+            <li>Catch wrestling <span class="where">— Lancashire's hooking and pins</span></li>
+            <li>Lucha libre <span class="where">— Mexico's high-flying wrestling theater</span></li>
+            <li>Bataireacht <span class="where">— Irish stick fighting, in revival</span></li>
+          </ul>
+
+          <h3 id="hybrid">Modern &amp; tactical systems</h3>
+          <ul>
+            <li>Shooto <span class="where">— Japan's early mixed rules sport</span></li>
+            <li>Shoot boxing <span class="where">— kickboxing with throws and standing subs</span></li>
+            <li>Kudo <span class="where">— full-contact karate + judo in a helmeted cage</span></li>
+            <li>Vale tudo <span class="where">— Brazil's early no-rules ring tradition</span></li>
+            <li>Kajukenbo <span class="where">— Hawaii's 1947 street-practical blend</span></li>
+            <li>American Kenpo <span class="where">— Ed Parker's modernized striking system</span></li>
+            <li>Kung Fu San Soo <span class="where">— practical Southern Chinese fighting art</span></li>
+            <li>Chun Kuk Do <span class="where">— Chuck Norris's evolving hybrid system</span></li>
+            <li>Defendu <span class="where">— Fairbairn's WWII close-combat method</span></li>
+            <li>Kapap <span class="where">— Israeli pre-krav-maga close-combat training</span></li>
+            <li>MCMAP <span class="where">— the US Marine Corps martial arts program</span></li>
+            <li>Modern Army Combatives <span class="where">— the US Army's grappling-based program</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <h2>Styles by method</h2>
+        <p class="section-intro">A different axis: what the art actually trains. Most people choose by method first, style second.</p>
+        <div class="split split--3">
+          <div class="panel">
+            <h3>Striking arts</h3>
+            <p>Karate, taekwondo, boxing, kickboxing, Muay Thai, sanda, savate. Distance management, punch and kick mechanics, footwork, and defense with hands, feet, knees, and elbows.</p>
+          </div>
+          <div class="panel">
+            <h3>Grappling arts</h3>
+            <p>Judo, BJJ, wrestling, sambo, luta livre, shuai jiao. Takedowns and throws, clinch control, pins, and submissions — fighting where the distance collapses.</p>
+          </div>
+          <div class="panel">
+            <h3>Weapons arts</h3>
+            <p>Kendo, iaido, kenjutsu, arnis/kali, krabi-krabong, bojutsu. Sword, staff, stick, and blade traditions that sharpen distance, timing, and intent.</p>
+          </div>
+        </div>
+        <div class="split" style="margin-top:14px">
+          <div class="panel">
+            <h3>Hybrid &amp; tactical</h3>
+            <p>MMA, krav maga, jeet kune do, sambo, HEMA sparring. Systems that mix ranges on purpose, often with pressure testing as the standard of truth.</p>
+          </div>
+          <div class="panel">
+            <h3>Internal &amp; flowing</h3>
+            <p>Tai chi, baguazhang, xingyiquan, aikido, taekkyeon. Emphasis on structure, relaxation, and sensitivity; many practitioners train them alongside harder arts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="choosing">
+      <div class="container">
+        <h2>Choosing your first school</h2>
+        <p class="section-intro">The art matters less than the instruction. A great teacher of an average style beats the reverse in every case that matters.</p>
+        <div class="callout callout--plain">
+          <h3>Checklist for your first dojo visit</h3>
+          <ul>
+            <li><strong>Watch a class before joining.</strong> Reputable schools expect it. Look for how instructors correct individuals, not just the group.</li>
+            <li><strong>Ask about lineage and rules.</strong> Who do the instructors rank under? Is sparring (or rolling) supervised, progressive, and consent-based?</li>
+            <li><strong>Check the beginner path.</strong> Is there a structured way to learn the basics, or are new students thrown to the senior class on day one?</li>
+            <li><strong>Count the cost, all of it.</strong> Monthly fees, grading fees, uniforms, gear. Surprise fees are a bad sign; clear ones are a good one.</li>
+            <li><strong>Try it twice.</strong> The first class is nerves; the second tells you what the training actually feels like.</li>
+          </ul>
+        </div>
+        <div class="panel" style="margin-top:14px">
+          <h3>For parents</h3>
+          <p>Martial arts are one of the best activities a kid can stick with — structure, respect, and a scoreboard nobody has to win. Look for age-appropriate classes (many schools start around 5–7), a calm instructor-to-student ratio, games that hide drills, and a culture where contact is introduced gradually with proper padding. A school that welcomes parents to watch a full class is a school that's proud of what happens in it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-seal" aria-hidden="true">道</span>
+          <strong>The Open Dojo</strong>
+        </div>
+        <p>A free, community-minded reference for martial artists of every art and level — styles, kata, techniques, terminology, and fitness, written to be read between classes.</p>
+      </div>
+      <div>
+        <h4>Library</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profiles.html">Style profiles</a></li>
+          <li><a href="kata.html">Kata &amp; Forms</a></li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li><a href="ranks.html">Belts &amp; ranking</a></li>
+          <li><a href="weapons.html">Weapons arts</a></li>
+          <li><a href="history.html">History &amp; philosophy</a></li>
+          <li><a href="sparring.html">Sparring</a></li>
+          <li><a href="self-defense.html">Self-defense</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="syllabi.html">Training syllabi</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contributing</h4>
+        <ul>
+          <li><a href="mailto:editors@opendojo.example">Send a correction</a></li>
+          <li><a href="mailto:editors@opendojo.example">Suggest a style</a></li>
+        </ul>
+        <p class="small">Missing your art? Tell us about it and help the catalog grow.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="container">
+        <span>© 2026 The Open Dojo. Original reference content, written for students of the fighting arts.</span>
+        <span>Informational only — practice techniques under qualified supervision.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var bar = document.querySelector('.filter-bar');
+      var cards = document.querySelectorAll('#style-cards .style-card');
+      bar.addEventListener('click', function (e) {
+        var btn = e.target.closest('button');
+        if (!btn) return;
+        bar.querySelectorAll('button').forEach(function (b) {
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+        });
+        var region = btn.dataset.region;
+        cards.forEach(function (card) {
+          card.style.display = (region === 'all' || card.dataset.region === region) ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
